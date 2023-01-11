@@ -5,39 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLANTREE: Prototype</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@500&family=Raleway:wght@400;500;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@500&family=Raleway:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-    <header>
-        <div>
-            <img src="css/img/iconoverde 2.png" alt="">
-        <a href="#"><h1><span>PLAN</span>TREE</h1></a>
-        </div>
-        
-        <button class="abrir">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav>
-            <button class="cerrar"">x</button>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">CARACTERÍSTICAS</a></li>
-                <li><a href="#">VIDEO</a></li>
-                <li><a href="#">PRECIOS</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="openingPage">
 
-    <main>
+        <header>
+            <div>
+                <img src="css/img/iconoverde 2.png" alt="">
+            <a href="#"><h1><span>PLAN</span>TREE</h1></a>
+            </div>
+            
+            <button class="abrir">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <button class="cerrar"">x</button>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <div id="bannerTabletView"></div>
 
         <section id="presentation">
 
-            <div id="textArea">
+            <div class="textArea">
                 <h1><span>Plantas</span> de interior para todo tipo de espacios</h1>
                 <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus,</p>
                 <button>
@@ -50,7 +53,37 @@
         
         </section>
 
-    </main>
+    </div>
+
+    <section id="aboutUs">
+        <div class="fullscreenCard greenBackground">
+            <div class="textArea">
+                <h1>Numerosos beneficios</h1>
+                <p>Las plantas de interior reducen los niveles de dióxido de carbono, incrementan la humedad del aire, relajan y hacen más agradable el ambiente del hogar. También se ha comprobado que aumentan la eficiencia laboral en las oficinas.</p>
+            </div>
+
+            <img src="css/img/fullscreenImage1.jpg" alt="">
+        </div>
+
+        <div class="fullscreenCard orangeBackground">
+            <img src="css/img/fullscreenImage2.jpg" alt="">
+            
+            <div class="textArea">
+                <h1>Numerosos beneficios</h1>
+                <p>Las plantas de interior reducen los niveles de dióxido de carbono, incrementan la humedad del aire, relajan y hacen más agradable el ambiente del hogar. También se ha comprobado que aumentan la eficiencia laboral en las oficinas.</p>
+            </div>
+        </div>
+
+        <div class="fullscreenCard darkBackground">
+            <div class="textArea">
+                <h1>Numerosos beneficios</h1>
+                <p>Las plantas de interior reducen los niveles de dióxido de carbono, incrementan la humedad del aire, relajan y hacen más agradable el ambiente del hogar. También se ha comprobado que aumentan la eficiencia laboral en las oficinas.</p>
+            </div>
+
+            <img src="css/img/fullscreenImage3.jpg" alt="">
+        </div>
+
+    </section>
     
     <script src="js/script.js"></script>
 </body>
