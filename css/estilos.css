@@ -161,15 +161,22 @@ ul a:hover {
 }
 
 .greenBackground {
-    background-color: #427A5B;
+    background: #427A5B; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C7744, #5A3F37); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .orangeBackground {
-    background-color: #c37857;
+    background: #c37857; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .darkBackground {
-    background-color: #403F3F;
+    background: #403F3F;;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .fullscreenCard div {
@@ -182,10 +189,68 @@ ul a:hover {
 .fullscreenCard img {
     width: 40%;
     border-radius: 10px;
+    object-fit: cover;
 }
 
+/* TIENDA: MINI-CARDS: DIVS AND IMAGES */
 
-
+#precios {
+    margin-top: 66px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+  
+.miniCard {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 50px;
+    width: 268px;
+    height: 390px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+  
+h3 {
+    font: normal bold 18px/57px Raleway;
+    letter-spacing: 0.12em;
+    margin-top: 0;
+    height: 57px;
+    background: #ECF4F1;
+    border-radius: 10px;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+}
+  
+.bottomCard {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+  
+.price {
+    font: normal bold 18px/21px Raleway;
+    color: #493C4C;
+}
+  
+#precios button {
+    width: 123px;
+    height: 37px;
+    background: #FFFFFF;
+    border: 1px solid #4AAF72;
+    box-sizing: border-box;
+    border-radius: 20px 0px;
+    font: normal bold 18px/21px Raleway;
+    color: #493C4C;
+}
+  
+#precios button:hover {
+    background-color: #4AAF72; 
+    color: white;
+}
+  
 
 @media screen and (max-width: 1366px) {
 
