@@ -176,6 +176,53 @@
         </div>
         <button>&gt;</button>
     </div>
+
+    <section id="contactForm">
+        <h2>Estamos aquí para ayudarte, ¡ponte en contacto!</h2>
+
+        <form action="/">
+            <div class="inputPair">
+                <label for="user">Tu nombre</label>
+                <input type="text" placeholder="Usuario" id="user">
+            </div>
+            
+            <div class="inputPair">
+                <label for="mail">Tu email</label>
+                <input type="email" placeholder="Email" id="mail">
+            </div>
+
+            <div class="inputPair">
+                <label for="social-select">¿Cómo nos conociste?</label>
+                <select name="redes" id="social-select">
+                    <option value="">-- Por favor elige una opción --<option>
+                    <option value="instagram">Instagram</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="google">Google</option>
+                    <option value="recomendacion">Recomendación directa</option>
+                    <option value="otro">Otra red social</option>
+                    <option value="publicidad">Publicidad</option>
+                </select>
+            </div>
+            
+            <div class="inputPair">
+                <label for="necesidad-select">¿Qué necesitas?</label>
+                <select name="tema" id="necesidad-select">
+                <option value="">-- Por favor elige una opción --</option>
+                <option value="producto">Petición de nuevo producto</option>
+                <option value="pedidos">Problemas con un pedido</option>
+                <option value="cuidados">Información sobre cuidados</option>
+                <option value="otro">Otras peticiones</option>
+                </select>
+            </div>
+
+            <div class="inputPair">
+                <label for="textArea">¿Qué necesitas?</label>
+                <textarea id="textArea" placeholder="Mensaje..." rows="6"></textarea>
+            </div>
+            
+            <button type="submit" href="/">Enviar</button>
+        </form>
+    </section>
     
     <script src="js/script.js"></script>
 </body>

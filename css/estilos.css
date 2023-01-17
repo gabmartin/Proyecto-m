@@ -193,7 +193,7 @@ ul a:hover {
 }
 
 
-/* SECCIÓN TIENDA-GALERIA: CARDS ORGANIZADAS CON FLEX Y FULLSCREEN VIEW AL SELECCIONARLAS  */
+/* SECCIÓN TIENDA-GALERIA: CARDS ORGANIZADAS CON FLEX Y FULLSCREEN VIEW AL SELECCIONARLAS */
 
 .galeria {
     margin-top: 66px;
@@ -325,7 +325,79 @@ ul a:hover {
     background-color: #4AAF72; 
     color: white;
 }
-  
+
+/* SECCIÓN FORMULARIO */
+
+#contactForm {
+    height: 100vh;
+    padding: 0 106px 0 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: 'Raleway';
+}
+
+#contactForm h2 {
+    width: 40vw;
+    font-weight: 500;
+    font-size: 3vw;
+    color: black;
+}
+
+form {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.inputPair {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 40px);
+    gap: 10px;
+}
+
+input, select, textarea {
+    background-color: rgba(220, 220, 220, 0.536);
+    border: none;
+    padding-left: 15px;
+}
+
+input, select {
+    height: 50px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    padding-top: 15px;
+}
+
+.inputPair:last-of-type {
+    width: 100%;
+}
+
+form button {
+    width: calc(50% - 40px);
+    background-color: #000000;
+    height: 50px;
+    color: white;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1366px) {
 
