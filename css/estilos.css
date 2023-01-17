@@ -192,16 +192,22 @@ ul a:hover {
     object-fit: cover;
 }
 
-/* TIENDA: MINI-CARDS: DIVS AND IMAGES */
 
-#precios {
+/* SECCIÓN TIENDA-GALERIA: CARDS ORGANIZADAS CON FLEX Y FULLSCREEN VIEW AL SELECCIONARLAS  */
+
+.galeria {
     margin-top: 66px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin-bottom: 100px;
 }
-  
+
+.galeria a{
+    text-decoration: none;
+    color: #493C4C;
+} 
+
 .miniCard {
     display: flex;
     flex-flow: column nowrap;
@@ -211,9 +217,10 @@ ul a:hover {
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
+    background-color: white;
 }
   
-h3 {
+.miniCard h3 {
     font: normal bold 18px/57px Raleway;
     letter-spacing: 0.12em;
     margin-top: 0;
@@ -223,6 +230,10 @@ h3 {
     border-bottom: 1px solid #000000;
     text-align: center;
 }
+
+.galeria .info {
+    display: none;  /* El innerHTML de estos parrafos será utilizado en la vista fullscreen a través de JS */
+} 
   
 .bottomCard {
     display: flex;
@@ -230,12 +241,76 @@ h3 {
     justify-content: space-around;
 }
   
-.price {
+.galeria .price {
     font: normal bold 18px/21px Raleway;
     color: #493C4C;
 }
-  
-#precios button {
+
+        /* FULLSCREEN VIEW DE LAS CARDS */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.visible {
+    display: flex;
+}
+
+.modal button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 5em;
+    display: block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.modalCard {
+    font-family: 'Raleway';
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 50px;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1.2vw;
+}
+
+.modalCard h3 {
+    font-size: 3em;
+}
+
+.modalCard img {
+    border-radius: 10px 0 0 10px;
+}
+
+.modalCard > div:first-of-type {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background: #ECF4F1;
+    padding: 5vh;
+    border-radius: 0 10px 10px 0;
+}
+
+.modalCard .bottomCard {
+    justify-content: space-between;
+    font-size: 1.6em;
+}
+
+.bottomCard button {
     width: 123px;
     height: 37px;
     background: #FFFFFF;
@@ -246,7 +321,7 @@ h3 {
     color: #493C4C;
 }
   
-#precios button:hover {
+.bottomCard button:hover {
     background-color: #4AAF72; 
     color: white;
 }
