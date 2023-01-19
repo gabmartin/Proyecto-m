@@ -39,19 +39,16 @@ header img {
     height: 35px;
 }
 
-header h1 {
+header a {
     font-family: 'Bebas Neue';
     margin-top: 17px;
     font-size: 2em;
     line-height: 50px;
     color: #427A5B;
-}
-
-header a {
     text-decoration: none;
 }
 
-h1 span {
+header span {
     color: #0F564F;
 }
 
@@ -107,7 +104,7 @@ ul a:hover {
     color: #403F3F;
 }
 
-.textArea h1 {
+.textArea h1, h2 {
     font-style: normal;
     font-weight: 800;
     font-size: 5vw;
