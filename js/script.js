@@ -1,7 +1,10 @@
-const controls = document.querySelectorAll(".abrir, .cerrar");
+const controls = document.querySelectorAll(".abrir, .cerrar"); // navbar controls
 const navegacion  = document.querySelector("nav");
 
-const miniaturas = document.querySelectorAll(".galeria a");
+/* shop cards: select content (img, plant names, description 
+and price) to then use it in the fullscreen card (referred as modal). */ 
+
+const miniaturas = document.querySelectorAll(".galeria a"); 
 const modal = document.querySelector(".modal");
 const imgModal = document.querySelector(".modal img");
 
@@ -14,7 +17,11 @@ const plantInfoModal = document.querySelector(".modal .info");
 const plantPrices = document.querySelectorAll(".galeria .price");
 const plantPriceModal = document.querySelector(".modal .price");
 
-const botones = document.querySelectorAll(".modal button");
+const botones = document.querySelectorAll(".modal button"); // left-right buttons
+
+/* Content from the products (urls or text) will be stored in arrays so the modal card
+changes as we click left and right buttons */
+
 let imgActiva = 0;
 let rutasImg = [];
 
@@ -33,12 +40,16 @@ controls.forEach(function(control){
     }); 
 })
 
+/* Store values in arrays */
+
 miniaturas.forEach(function(miniatura, index){
     rutasImg.push(miniatura.getAttribute("href"));
     titlesContent.push(miniatura.getElementsByTagName("h3").innerHTML);
     infosContent.push(miniatura.getElementsByClassName("info").innerHTML);
     pricesContent.push(miniatura.getElementsByClassName("price").innerHTML);
     
+
+/* Clicking a card opens the FS view and gives that card's content to the FS card */
 
     miniatura.addEventListener("click", function(evento){
         evento.preventDefault();
@@ -54,7 +65,6 @@ miniaturas.forEach(function(miniatura, index){
         plantPriceModal.innerHTML = plantPrices[index].innerHTML;
     });
 })
-
 
 if(modal){
     modal.addEventListener("click", function(){
