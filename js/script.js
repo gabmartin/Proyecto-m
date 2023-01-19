@@ -6,6 +6,7 @@ and price) to then use it in the fullscreen card (referred as modal). */
 
 const miniaturas = document.querySelectorAll(".galeria a"); 
 const modal = document.querySelector(".modal");
+const modalCard = document.querySelector(".modalCard")
 const imgModal = document.querySelector(".modal img");
 
 const plantNames = document.querySelectorAll(".galeria h3")
@@ -17,7 +18,7 @@ const plantInfoModal = document.querySelector(".modal .info");
 const plantPrices = document.querySelectorAll(".galeria .price");
 const plantPriceModal = document.querySelector(".modal .price");
 
-const botones = document.querySelectorAll(".modal button"); // left-right buttons
+const botones = document.querySelectorAll(".modal > button"); // left-right buttons
 
 /* Content from the products (urls or text) will be stored in arrays so the modal card
 changes as we click left and right buttons */
@@ -49,7 +50,7 @@ miniaturas.forEach(function(miniatura, index){
     pricesContent.push(miniatura.getElementsByClassName("price").innerHTML);
     
 
-/* Clicking a card opens the FS view and gives that card's content to the FS card */
+    /* Clicking a card opens the FS view and takes that card's content to the FS card */
 
     miniatura.addEventListener("click", function(evento){
         evento.preventDefault();
@@ -72,6 +73,8 @@ if(modal){
     });
 }
 
+/* Once fullscreen view is visible, clicking left-right buttons navigates throught the cards 
+using the arrays created before and the index features */
 
 botones.forEach(function(boton, index){
     boton.addEventListener("click", function(evento){
@@ -95,3 +98,9 @@ botones.forEach(function(boton, index){
 
     });
 })
+
+/* Clicking the fullscreen modal card won't close it */
+
+modalCard.addEventListener("click", function(evento){
+    evento.stopPropagation();
+});
