@@ -74,7 +74,7 @@ if(modal){
 }
 
 /* Once fullscreen view is visible, clicking left-right buttons navigates throught the cards 
-using the arrays created before and the index features */
+using the arrays created before and index features */
 
 botones.forEach(function(boton, index){
     boton.addEventListener("click", function(evento){

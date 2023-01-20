@@ -10,15 +10,6 @@ body {
     justify-content: flex-start;
 }
 
-#openingPage {
-    background-color: #E5E3D4;
-    height: 100vh;
-    padding: 0 106px 0 106px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
 /* HEADER: LOGO AND NAVBAR */
 
 header {
@@ -81,6 +72,15 @@ ul a:hover {
 
 /* MAIN SECTION: TITLE, SUBTITLE, IMAGES AND BUTTON */
 
+#openingPage {
+    background-color: #E5E3D4;
+    height: 100vh;
+    padding: 0 106px 0 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 #presentation {
     font-family: 'Raleway';
     display: flex;
@@ -139,7 +139,9 @@ ul a:hover {
 /* ABOUT US: 3 FULLSCREEN CARDS: DIVS AND IMAGES */
 
 #aboutUs {
+    font-family: 'Raleway';
     margin: 15vh 0;
+    padding: 0 106px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,7 +149,7 @@ ul a:hover {
 }
 
 .fullscreenCard {
-    width: 80vw;
+    /* width: 80vw; */
     height: 80vh;
     display: flex;
     flex-direction: row;
@@ -192,12 +194,16 @@ ul a:hover {
 
 /* SECCIÓN TIENDA-GALERIA: CARDS ORGANIZADAS CON FLEX Y FULLSCREEN VIEW AL SELECCIONARLAS */
 
+#shop {
+    font-family: 'Raleway';
+    padding: 0 106px 0 106px;
+}
+
 .galeria {
     margin-top: 66px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    margin-bottom: 100px;
+    justify-content: space-between;
 }
 
 .galeria a{
@@ -208,7 +214,7 @@ ul a:hover {
 .miniCard {
     display: flex;
     flex-flow: column nowrap;
-    margin: 50px;
+    margin: 0 10px 65px;
     width: 268px;
     height: 390px;
     border: 1px solid #000000;
@@ -267,7 +273,8 @@ ul a:hover {
     border: none;
     background-color: transparent;
     color: white;
-    font-size: 5em;
+    line-height: 1em;
+    font-size: 4em;
     display: block;
     margin: 0 20px;
     cursor: pointer;
