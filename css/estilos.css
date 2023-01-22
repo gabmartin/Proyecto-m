@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    overflow-x: hidden;
 }
 
 /* HEADER: LOGO AND NAVBAR */
@@ -440,19 +441,22 @@ form button {
 
 
 @media (max-width:720px){
-    .footer{
+
+.footer {
     text-align:left;
     padding:5%;
-    }
-    .footer .row ul li{
+}
+
+.footer .row ul li {
     display:block;
     margin:10px 0px;
     text-align:left;
-    }
-    .footer .row a i{
+}
+
+.footer .row a i {
     margin:0% 3%;
     }
-    }
+}
 
 
 
@@ -464,6 +468,10 @@ form button {
 @media screen and (max-width: 1000px) {
 
     /* HEADER AND NAVBAR */ 
+
+    header {
+        height: 76px;
+    }
 
     nav {
         position: fixed;
@@ -532,17 +540,13 @@ form button {
 
     /* FIRST PAGE */ 
 
-    body {
-        padding: 0 60px 0 60px;
-    }
-
     main {
         margin-top: 13px;
         display: flex;
         flex-direction: column;
     }
 
-    #visualizer {
+    #images_vector {
         display: none;
     }
 
@@ -556,15 +560,23 @@ form button {
         mix-blend-mode: normal;
         left: 0;
         width: 100vw;
-        height: 50vh;
+        height: 40vh;
+        margin: 0 -106px;
     }
 
     #presentation {
+        flex-direction: column;
+        width: auto; 
+        height: auto;
+    }
+
+    #presentation .textArea {
         padding-right: 0;
+        font-size: 2.2vw;
     }
 
     #presentation h1 {
-        margin-top: -80px;
+        margin-top: -165px;
         font-size: 8vw;
     }
 
@@ -572,11 +584,9 @@ form button {
         gap: 2vw;
         width: 35vw;
         height: 5vh;
+        font-size: 0.60em;
     }
     
-    #presentation button, button img, button p {
-        font-size: 2.5vw;
-    }
 
 }
 
