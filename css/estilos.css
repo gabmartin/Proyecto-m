@@ -656,7 +656,19 @@ form button {
         flex-direction: column;
     }
 
+}
 
+@media screen and (max-width: 641px) {
+    #openingPage, #aboutUs, #shop, #contactForm {
+        padding: 0 15px;
+    }
 
+    .fullscreenCard div {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 8vw;
+    }
 
 }
