@@ -689,6 +689,8 @@ form button {
 
     .modalCard {
         flex-flow: column nowrap;
+        font-size: 3.5vw;
+        text-align: justify;
     }
 
     .modal > button {
