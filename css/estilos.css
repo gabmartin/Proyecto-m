@@ -193,6 +193,10 @@ ul a:hover {
     object-fit: cover;
 }
 
+.fullscreenCard p {
+    text-align: justify;
+}
+
 
 /* SECCIÓN TIENDA-GALERIA: CARDS ORGANIZADAS CON FLEX Y FULLSCREEN VIEW AL SELECCIONARLAS */
 
@@ -366,6 +370,7 @@ form {
     display: flex;
     flex-direction: column;
     width: calc(50% - 40px);
+    min-width: 223px;
     gap: 10px;
 }
 
@@ -581,12 +586,11 @@ form button {
     }
 
     #presentation button {
-        gap: 2vw;
-        width: 35vw;
-        height: 5vh;
-        font-size: 0.60em;
+        gap: 10px;
+        width: 157px;
+        height: 36px;
+        font-size: 10px;
     }
-
 
     /* ABOUT US: FULLSCREEN CARDS */
 
@@ -621,6 +625,9 @@ form button {
         padding: 0 50px;
     }
 
+    .galeria {
+        justify-content: center;
+    }
 
     .miniCard {
         width: 332px;
