@@ -452,26 +452,7 @@ form button {
 }
 
 
-@media (max-width:720px){
-
-.footer {
-    text-align:left;
-    padding:5%;
-}
-
-.footer .row ul li {
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-}
-
-.footer .row a i {
-    margin:0% 3%;
-    }
-}
-
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
 
     /* HEADER AND NAVBAR */ 
 
@@ -633,6 +614,19 @@ form button {
 
     /* SHOP */
 
+    .modalCard {
+        flex-flow: column nowrap;
+        height: 58vh;
+        width: auto;
+        background-color: white;
+    }
+
+    .modalCard img {
+        height: 30vw;
+        width: auto;
+        object-fit: scale-down;
+    }
+
     #shop {
         padding: 0 50px;
     }
@@ -670,6 +664,24 @@ form button {
 
 }
 
+@media (max-width:720px){
+
+    .footer {
+        text-align:left;
+        padding:5%;
+    }
+    
+    .footer .row ul li {
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+    }
+    
+    .footer .row a i {
+        margin:0% 3%;
+        }
+    }
+
 @media screen and (max-width: 641px) {
     #openingPage, #aboutUs, #shop, #contactForm {
         padding: 0 15px;
@@ -687,10 +699,16 @@ form button {
         font-size: 8vw;
     }
 
+    .modal {
+        align-items: unset;
+    }
+
     .modalCard {
         flex-flow: column nowrap;
         font-size: 3.5vw;
         text-align: justify;
+        width: 70vw;
+        height: 70vh;
     }
 
     .modal > button {
@@ -700,6 +718,7 @@ form button {
 
     .modalCard img {
         border-radius: 10px 10px 0 0;
+        height: 55vw;
     }
 
     .modalCard > div:first-of-type {
@@ -719,3 +738,4 @@ form button {
     }
 
 }
+
