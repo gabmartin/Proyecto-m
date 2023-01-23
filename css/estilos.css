@@ -687,4 +687,33 @@ form button {
         font-size: 8vw;
     }
 
+    .modalCard {
+        flex-flow: column nowrap;
+    }
+
+    .modal > button {
+        margin: 0 -35px;
+        font-size: 2em;
+    }
+
+    .modalCard img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .modalCard > div:first-of-type {
+        padding: 3vh;
+        gap: 2vh;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .modalCard .bottomCard {
+        justify-content: space-between;
+    }
+
+    .bottomCard button {
+        width: 100px;
+        height: 27px;
+        font: normal bold 12px/18px Raleway;
+    }
+
 }
