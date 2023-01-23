@@ -482,12 +482,18 @@ form button {
     nav {
         position: fixed;
         top: -200vh;
-        left: 0;
+        right: 0;
         padding: 20px;
-        width: calc(100% - 40px);
+        width: 50vw;
         height: calc(100% - 40px);
-        background-color: salmon;
+        background-color: #ECF4F1;
         transition: top 0.8s;
+        -webkit-box-shadow: -27px 0px 130px 6px rgb(0 0 0 / 58%);
+        -moz-box-shadow: -27px 0px 130px 6px rgba(0,0,0,0.58);
+        box-shadow: -27px 0px 130px 6px rgb(0 0 0 / 58%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .desplegado {
@@ -495,12 +501,14 @@ form button {
     }
 
     nav ul {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
     }
 
     nav a {
         color: black;
-        font-size: 3em;
+        font-size: 1.5em;
     }
 
     nav li:not(:last-child){
@@ -665,6 +673,10 @@ form button {
 @media screen and (max-width: 641px) {
     #openingPage, #aboutUs, #shop, #contactForm {
         padding: 0 15px;
+    }
+
+    #openingPage {
+        height: auto;
     }
 
     .fullscreenCard div {

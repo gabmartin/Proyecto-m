@@ -1,6 +1,10 @@
 const controls = document.querySelectorAll(".abrir, .cerrar"); // navbar controls
 const navegacion  = document.querySelector("nav");
 
+/* To close the sidebar (if visible) directly when clicking on a section, without having to
+click the "cerrar / X" button, we'll have to select hyperlinks from the navbar */ 
+const links = document.querySelectorAll("nav a");  
+
 /* shop cards: select content (img, plant names, description 
 and price) to then use it in the fullscreen card (referred as modal). */ 
 
@@ -37,6 +41,12 @@ let pricesContent = [];
 
 controls.forEach(function(control){
     control.addEventListener("click", function(){
+        navegacion.classList.toggle("desplegado");
+    }); 
+})
+
+links.forEach(function(link){
+    link.addEventListener("click", function(){
         navegacion.classList.toggle("desplegado");
     }); 
 })
