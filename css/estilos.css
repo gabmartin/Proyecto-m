@@ -155,7 +155,6 @@ ul a:hover {
 }
 
 .fullscreenCard {
-    /* width: 80vw; */
     height: 80vh;
     display: flex;
     flex-direction: row;
@@ -699,8 +698,10 @@ form button {
         font-size: 8vw;
     }
 
+    /* SHOP: VISTA FULLSCREEN DE LOS PRODUCTOS */ 
+
     .modal {
-        align-items: unset;
+        align-items: unset; /* */
     }
 
     .modalCard {

@@ -13,21 +13,24 @@
 </head>
 <body>
 
+    <!-- Página principal: HEADER y Opening Page -->
     <div id="openingPage">
 
-        <header>
+
+        <!-- Header: Logo e Indice -->
+        <header> 
             <div>
                 <img src="css/img/iconoverde2.png" alt="">
             <a href="#openingPage"><span>PLAN</span>TREE</a>
             </div>
             
-            <button class="abrir">
+            <button class="abrir"> <!-- Visible en dispositivos pequeños -->
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <nav>
-                <button class="cerrar">x</button>
+                <button class="cerrar">x</button> <!-- Visible en dispositivos pequeños -->
                 <ul>
                     <li><a href="#aboutUs">Sobre nosotros</a></li>
                     <li><a href="#shop">Tienda</a></li>
@@ -36,7 +39,10 @@
             </nav>
         </header>
 
-        <div id="bannerTabletView"></div>
+
+        <!-- Visible en dispositivos pequeños: he tenido que añadir la imagen en CSS para
+        aplicar filtros especificos -->
+        <div id="bannerTabletView"></div> 
 
         <section id="presentation">
 
@@ -51,12 +57,14 @@
                 </a>  
             </div>
             
+            <!-- Imagen decorativa -->
             <img id="images_vector" src="css/img/group_images.png" alt="">
         
         </section>
 
     </div>
 
+    <!-- Seccion "Sobre Nosotros": tres contenedores fullscreen  -->
     <section id="aboutUs">
         <div class="fullscreenCard greenBackground">
             <div class="textArea">
@@ -87,6 +95,7 @@
 
     </section>
 
+    <!-- Tienda: titulo de seccion y galeria de productos  -->
     <section id="shop">
         <h2>Lo más vendido</h2>
         <div class="galeria">
@@ -166,41 +175,46 @@
 
     </section>
     
+    <!-- Este contenedor solo será visible al hacer click en un producto
+    de la tienda, es invisible por defecto  -->
     <div class="modal">
-        <button>&lt;</button>
+        <button>&lt;</button> <!-- Boton izquierda o previo -->
         <div class="modalCard">
             <img src="" alt="Small plant">
             <div>
                 <h3>Pothos Golden</h3>
                 <p class="info"></p>
-                <div class="bottomCard">
+                <div class="bottomCard"> 
                     <p class="price">$27.50</p>
                     <button type="button">COMPRAR</button>
                 </div>  
             </div>
             
         </div>
-        <button>&gt;</button>
+        <button>&gt;</button> <!-- Boton derecha o siguiente -->
     </div>
 
+    <!-- Formulario de contacto: título de seccion y formulario  -->
     <section id="contactForm">
         <h2>Estamos aquí para ayudarte, ¡ponte en contacto!</h2>
 
-        <form action="/">
-            <div class="inputPair">
+        <form>
+            <!-- He agrupado cada input con su label para estilizarlo. 
+            El label siempre descansara justo encima del input -->
+            <div class="inputPair"> 
                 <label for="user">Tu nombre</label>
                 <input type="text" placeholder="Usuario" id="user">
             </div>
             
             <div class="inputPair">
-                <label for="mail">Tu email</label>
+                <label for="mail">Tu email</label> 
                 <input type="email" placeholder="Email" id="mail">
             </div>
 
             <div class="inputPair">
                 <label for="social-select">¿Cómo nos conociste?</label>
                 <select name="redes" id="social-select">
-                    <option value="">-- Por favor elige una opción --<option>
+                    <option value="">-- Por favor elige una opción --<option> <!-- Valor por defecto -->
                     <option value="instagram">Instagram</option>
                     <option value="twitter">Twitter</option>
                     <option value="google">Google</option>
@@ -213,7 +227,7 @@
             <div class="inputPair">
                 <label for="necesidad-select">¿Qué necesitas?</label>
                 <select name="tema" id="necesidad-select">
-                <option value="">-- Por favor elige una opción --</option>
+                <option value="">-- Por favor elige una opción --</option> <!-- Valor por defecto -->
                 <option value="producto">Petición de nuevo producto</option>
                 <option value="pedidos">Problemas con un pedido</option>
                 <option value="cuidados">Información sobre cuidados</option>
@@ -229,22 +243,27 @@
         </form>
     </section>
 
+    <!-- El footer contiene: links a redes sociales, índice de la web y texto 
+    sobre el Copyright-->
     <footer>
         <div class="footer">
-            <div class="row">
+
+            <!-- Iconos redes sociales  -->
+            <div class="row"> 
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-youtube"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
             </div>
             
+            <!-- Indice  -->
             <div class="row">
                 <ul>
                     <li><a href="#aboutUs">Sobre nosotros</a></li>
                     <li><a href="#shop">Tienda</a></li>
                     <li><a href="#contactForm">Contacto</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li> <!-- Placeholder modificable por información real  -->
+                    <li><a href="#">Terms & Conditions</a></li> <!-- Placeholder modificable por información real  -->
                 </ul>
             </div>
             

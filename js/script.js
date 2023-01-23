@@ -24,7 +24,7 @@ const plantPriceModal = document.querySelector(".modal .price");
 
 const botones = document.querySelectorAll(".modal > button"); // left-right buttons
 
-/* Content from the products (urls or text) will be stored in arrays so the modal card
+/* SHOP SCRIPT: Content from the products (urls or text) will be stored in arrays so the modal card
 changes as we click left and right buttons */
 
 let imgActiva = 0;
@@ -38,6 +38,8 @@ let infosContent = [];
 
 let priceActivo = 0;
 let pricesContent = [];
+
+/* NAVBAR SCRIPT */
 
 controls.forEach(function(control){
     control.addEventListener("click", function(){
