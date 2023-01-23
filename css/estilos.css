@@ -80,6 +80,7 @@ ul a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    overflow-x: hidden;
 }
 
 #presentation {
@@ -88,7 +89,6 @@ ul a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 87vw;
     height: 80vh;
 }
 
@@ -133,7 +133,8 @@ ul a:hover {
 }
 
 #images_vector {
-    height: 95%;
+    max-height: 751px;
+    height: 35vw;
     width: auto;
 }
 
@@ -334,13 +335,15 @@ ul a:hover {
 /* SECCIÓN FORMULARIO */
 
 #contactForm {
-    height: 100vh;
+    height: 75vh;
     padding: 0 106px 0 106px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     font-family: 'Raleway';
+    gap: 5vh;
+    margin-bottom: 5vh;
 }
 
 #contactForm h2 {
@@ -459,12 +462,6 @@ form button {
 }
 
 
-
-@media screen and (max-width: 1366px) {
-
-    
-}
-
 @media screen and (max-width: 1000px) {
 
     /* HEADER AND NAVBAR */ 
@@ -546,6 +543,10 @@ form button {
         flex-direction: column;
     }
 
+    #openingPage {
+        padding: 0 50px;
+    }
+
     #images_vector {
         display: none;
     }
@@ -559,7 +560,6 @@ form button {
         background-blend-mode: lighten, normal;
         mix-blend-mode: normal;
         left: 0;
-        width: 100vw;
         height: 40vh;
         margin: 0 -106px;
     }
@@ -568,6 +568,7 @@ form button {
         flex-direction: column;
         width: auto; 
         height: auto;
+        margin-bottom: 7vh;
     }
 
     #presentation .textArea {
@@ -576,7 +577,6 @@ form button {
     }
 
     #presentation h1 {
-        margin-top: -165px;
         font-size: 8vw;
     }
 
@@ -586,39 +586,70 @@ form button {
         height: 5vh;
         font-size: 0.60em;
     }
-    
 
-}
 
-@media screen and (max-width:500px) {
+    /* ABOUT US: FULLSCREEN CARDS */
 
-    #visualizer {
-        top: 170px;
+    h2 {
+        font-size: 7vw;
     }
 
-    #visualizer img:first-child {
-        width: 406px;
+    #aboutUs {
+        margin: 5vh 0;
+        gap: 5vh;
+        padding: 0 50px;
+    }
+
+    .fullscreenCard {
         height: auto;
-        right: 152px;
-        top: 25.5px;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
-    #visualizer img:nth-child(2) {
-        height: 217px;
-        top: 35px;
-        right: -20px;
+    .orangeBackground {
+        flex-direction: column-reverse;
     }
 
-    #visualizer img:nth-child(3) {
-        height: 156px;
-        top: -55px;
-        right: -85px;
+    .fullscreenCard img {
+        width: 100%;
+        height: 40vh;
     }
 
-    #visualizer img:nth-child(4) {
-        height: 244px;
-        top: 256px;
-        right: 56px;
+    /* SHOP */
+
+    #shop {
+        padding: 0 50px;
     }
+
+
+    .miniCard {
+        width: 332px;
+        height: auto;
+        padding-bottom: 2vh;
+    }
+
+    /* SECCIÓN FORMULARIO */
+
+    #contactForm {
+        height: auto;
+        padding: 0 50px;
+        margin-bottom: 5vh;
+        justify-content: flex-start;
+        gap: 5vh;
+    }
+
+    #contactForm h2 {
+        width: auto;
+        font-size: 5vw;
+        text-align: justify;
+    }
+
+    form {
+        width: 73vw;
+        flex-direction: column;
+    }
+
+
+
 
 }
